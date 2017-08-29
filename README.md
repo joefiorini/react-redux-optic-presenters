@@ -51,7 +51,7 @@ export default {
 
 Then you can connect your component to the presenter like so:
 
-```react
+```javascript
 import React from 'react';
 import presenter from './presenter';
 
