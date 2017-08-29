@@ -2,5 +2,8 @@
   "name": "react-redux-presenters",
   "version": "0.0.1",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "peerDependencies": {
+    "react-redux": "^5.0.6"
+  }
 }
