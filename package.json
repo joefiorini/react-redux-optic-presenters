@@ -1,9 +1,21 @@
 {
   "name": "react-redux-presenters",
-  "version": "0.0.1",
-  "main": "index.js",
+  "version": "0.0.3",
+  "main": "./lib/index.js",
   "license": "MIT",
+  "scripts": {
+    "build:commonjs": "cross-env BABEL_ENV=commonjs babel src --out-dir lib",
+    "build": "yarn run build:commonjs",
+    "clean": "rimraf lib dist es coverage",
+    "prepare": "npm run clean && npm run build"
+  },
   "peerDependencies": {
     "react-redux": "^5.0.6"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "cross-env": "^5.0.5"
   }
 }
